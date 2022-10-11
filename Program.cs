@@ -24,6 +24,9 @@ namespace _3sem_2lab_c_sharp
                 //Пропишите, пожалуйста, свой путь к файлу input.txt
                 string[] readText = File.ReadAllLines(@"S:\Documents\Visual Studio 2022\3sem_2lab_c_sharp\input.txt");
 
+                //в файле input.txt первая строка выступает за X координаты окружностей
+                //вторая - за Y координаты окружностей
+                //третья - за радиусы окружностей
                 string[] x_read = readText[0].Split();
                 string[] y_read = readText[1].Split();
                 string[] r_read = readText[2].Split();
@@ -36,8 +39,8 @@ namespace _3sem_2lab_c_sharp
                     y[i] = Convert.ToDouble(y_read[i]);
                     r[i] = Convert.ToDouble(r_read[i]);
                 }
-                                
-                Console.WriteLine("Координаты окружностей: ");
+
+                Console.WriteLine("Координаты и радиусы окружностей: ");
                 for (int i = 0; i < x.Length; i++)
                 {
                     Console.WriteLine("x = " + x[i] + "; y = " + y[i] + "; r = " + r[i]);
