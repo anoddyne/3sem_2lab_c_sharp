@@ -44,7 +44,6 @@ namespace _3sem_2lab_c_sharp
                 {
                     for (int j = i + 1; j < y.Length; j++)
                     {
-
                         s = Math.Sqrt((x[i] - x[j])*(x[i] - x[j]) + (y[i] - y[j])*(y[i] - y[j]));
                         if (s <= Math.Abs(r[i] + r[j]))
                         {
