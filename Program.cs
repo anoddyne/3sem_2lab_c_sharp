@@ -53,7 +53,7 @@ namespace _3sem_2lab_c_sharp
                 }
 
                 Console.WriteLine("Найдено пересечений: " + count);
-                Console.WriteLine("Окружностей пересечено: " + 2 * count);
+                Console.WriteLine("Пар окружностей пересечено: " + 2 * count);
             }
 
             Console.ReadLine();
