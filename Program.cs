@@ -20,7 +20,10 @@ namespace _3sem_2lab_c_sharp
             {
                 int count = 0;
                 double s;
+
+                //Пропишите, пожалуйста, свой путь к файлу input.txt
                 string[] readText = File.ReadAllLines(@"S:\Documents\Visual Studio 2022\3sem_2lab_c_sharp\input.txt");
+
                 string[] x_read = readText[0].Split();
                 string[] y_read = readText[1].Split();
                 string[] r_read = readText[2].Split();
