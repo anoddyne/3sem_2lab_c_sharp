@@ -19,6 +19,7 @@ namespace _3sem_2lab_c_sharp
         {
             {
                 int count = 0;
+                double s;
                 string[] readText = File.ReadAllLines(@"S:\Documents\Visual Studio 2022\3sem_2lab_c_sharp\input.txt");
                 string[] x_read = readText[0].Split();
                 string[] y_read = readText[1].Split();
@@ -32,8 +33,7 @@ namespace _3sem_2lab_c_sharp
                     y[i] = Convert.ToDouble(y_read[i]);
                     r[i] = Convert.ToDouble(r_read[i]);
                 }
-
-                double s;
+                                
                 Console.WriteLine("Координаты окружностей: ");
                 for (int i = 0; i < x.Length; i++)
                 {
