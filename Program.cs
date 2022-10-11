@@ -18,19 +18,19 @@ namespace _3sem_2lab_c_sharp
         static void Main(string[] args)
         {
             {
-                int n, count = 0;
+                int count = 0;
                 string[] readText = File.ReadAllLines(@"S:\Documents\Visual Studio 2022\3sem_2lab_c_sharp\input.txt");
-                string[] x = readText[0].Split();
-                string[] y = readText[1].Split();
-                string[] r = readText[2].Split();
-                double[] x1 = new double[x.Length];
-                double[] y1 = new double[y.Length];
-                double[] r1 = new double[r.Length];
-                for (int i= 0; i < x.Length; i++)
+                string[] x_read = readText[0].Split();
+                string[] y_read = readText[1].Split();
+                string[] r_read = readText[2].Split();
+                double[] x = new double[x_read.Length];
+                double[] y = new double[y_read.Length];
+                double[] r = new double[r_read.Length];
+                for (int i = 0; i < x.Length; i++)
                 {
-                    x1[i] = Convert.ToDouble(x[i]);
-                    y1[i] = Convert.ToDouble(y[i]);
-                    r1[i] = Convert.ToDouble(r[i]);
+                    x[i] = Convert.ToDouble(x_read[i]);
+                    y[i] = Convert.ToDouble(y_read[i]);
+                    r[i] = Convert.ToDouble(r_read[i]);
                 }
 
                 double s;
@@ -45,8 +45,8 @@ namespace _3sem_2lab_c_sharp
                     for (int j = i + 1; j < y.Length; j++)
                     {
 
-                        s = Math.Sqrt((x1[i] - x1[j])*(x1[i] - x1[j]) + (y1[i] - y1[j])*(y1[i] - y1[j]));
-                        if (s <= Math.Abs(r1[i] + r1[j]))
+                        s = Math.Sqrt((x[i] - x[j])*(x[i] - x[j]) + (y[i] - y[j])*(y[i] - y[j]));
+                        if (s <= Math.Abs(r[i] + r[j]))
                         {
                             count++;
                         }
