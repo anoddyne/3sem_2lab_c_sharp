@@ -13,7 +13,6 @@ namespace _3sem_2lab_c_sharp
 {
     internal class Program
     {
-
         static void Main(string[] args)
         {
             {
@@ -21,7 +20,7 @@ namespace _3sem_2lab_c_sharp
                 double s;
 
                 //Пропишите, пожалуйста, свой путь к файлу input.txt
-                string[] readText = File.ReadAllLines(@"S:\Documents\Visual Studio 2022\3sem_2lab_c_sharp\input.txt");
+                string[] readText = File.ReadAllLines("input.txt");
 
                 //в файле input.txt первая строка выступает за X координаты окружностей
                 //вторая - за Y координаты окружностей
